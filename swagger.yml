@@ -35,7 +35,7 @@ paths:
                 get:
                         tags:
                                 - todos
-                        operationId: find_todos
+                        # operationId: find_todos
                         parameters:
                                 - name: since
                                   in: query
@@ -57,6 +57,67 @@ paths:
                                         description: generic error response
                                         schema:
                                                 $ref: "#/definitions/error"
+                post:
+                        tags:
+                                - todos
+                        operationId: addOne
+                        parameters:
+                                - name: body
+                                  in: body
+                                  schema:
+                                        $ref: "#/definitions/item"
+                        responses:
+                                201:
+                                        description: Created
+                                        schema:
+                                                $ref: "#/definitions/item"
+                                default:
+                                        description: error
+                                        schema:
+                                                $ref: "#/definitions/error"
+
+        /{id}:
+                delete:
+                        tags:
+                                - todos
+                        operationId: destroyOne
+                        parameters:
+                                - type: integer
+                                  format: int64
+                                  name: id
+                                  in: path
+                                  required: true
+                        responses:
+                                204:
+                                        description: Deleted
+                                default:
+                                        description: error
+                                        schema:
+                                                $ref: "#/definitions/error"
+                parameters:
+                - type: integer
+                  format: int64
+                  name: id
+                  in: path
+                  required: true
+                put:
+                        tags: ["todos"]
+                        operationId: updateOne
+                        parameters:
+                        - name: body
+                          in: body
+                          schema:
+                                $ref: "#/definitions/item"
+                        responses:
+                                '200':
+                                        description: OK
+                                        schema:
+                                                $ref: "#/definitions/item"
+                                default:
+                                        description: error
+                                        schema:
+                                                $ref: "#/definitions/error"
+
 produces:
 - application/io.goswagger.examples.todo-list.v1+json
 schemes:

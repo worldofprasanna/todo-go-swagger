@@ -1,3 +1,40 @@
-# todo-go-swagger
+# swagger-todo
 
-Sample application generated from scratch using go-swagger. 
+[![standard-readme compliant](https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+
+> Sample application generated from scratch using go-swagger
+
+## Table of Contents
+
+- [Install](#install)
+- [Usage](#usage)
+- [Maintainers](#maintainers)
+- [Contribute](#contribute)
+- [License](#license)
+
+## Install
+
+```
+go get -u github.com/worldofprasanna/todo-go-swagger/cmd/todo-list-server
+```
+
+## Usage
+
+```
+todo-list-server -h # To get list of all menus
+todo-list-server # To start the server
+```
+
+## Maintainers
+
+[@worldofprasanna](https://github.com/worldofprasanna)
+
+## Contribute
+
+PRs accepted.
+
+Small note: If editing the README, please conform to the [standard-readme](https://github.com/RichardLitt/standard-readme) specification.
+
+## License
+
+MIT © 2018 Prasanna V

@@ -21,6 +21,12 @@ brew install sample-todo
 (or)
 
 go get -u github.com/worldofprasanna/todo-go-swagger/cmd/todo-list-server
+
+(or)
+
+git clone https://github.com/worldofprasanna/todo-go-swagger.git
+cd todo-go-swagger
+go install ./cmd/todo-go-swagger # which will install the binary in $GOPATH/bin
 ```
 
 ## Usage

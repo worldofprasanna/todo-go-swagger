@@ -22,3 +22,16 @@ changelog:
     exclude:
     - '^docs:'
     - '^test:'
+brew:
+  name: sample-todo
+  github:
+    owner: worldofprasanna
+    name: homebrew-tap
+  url_template: "https://github.com/worldofprasanna/todo-go-swagger/releases/download/{{ .Tag }}/{{ .ArtifactName }}"
+  commit_author:
+    name: worldofprasanna
+    email: prasannacse2005@gmail.com
+  folder: Formula
+  homepage: "http://worldofprasanna.in"
+  description: "Simple plain todo. Sample project to setup proper golang project"
+  

@@ -15,14 +15,19 @@
 ## Install
 
 ```
+brew tap worldofprasanna/homebrew-tap
+brew install sample-todo
+
+(or)
+
 go get -u github.com/worldofprasanna/todo-go-swagger/cmd/todo-list-server
 ```
 
 ## Usage
 
 ```
-todo-list-server -h # To get list of all menus
-todo-list-server # To start the server
+todo-go-swagger -h # To get list of all menus
+todo-go-swagger # To start the server
 ```
 
 ## Maintainers

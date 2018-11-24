@@ -23,11 +23,11 @@ changelog:
     - '^docs:'
     - '^test:'
 brew:
-  name: sample-todo
+  name: todo-list-server
   github:
     owner: worldofprasanna
     name: homebrew-tap
-  url_template: "https://github.com/worldofprasanna/todo-go-swagger/releases/download/{{ .Tag }}/{{ .ArtifactName }}"
+  url_template: "https://github.com/worldofprasanna/todo-list-server/releases/download/{{ .Tag }}/{{ .ArtifactName }}"
   commit_author:
     name: worldofprasanna
     email: prasannacse2005@gmail.com

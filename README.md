@@ -16,24 +16,24 @@
 
 ```
 brew tap worldofprasanna/homebrew-tap
-brew install sample-todo
+brew install todo-list-server
 
 (or)
 
-go get -u github.com/worldofprasanna/todo-go-swagger/cmd/todo-list-server
+go get -u github.com/worldofprasanna/todo-list-server/cmd/todo-list-server
 
 (or)
 
-git clone https://github.com/worldofprasanna/todo-go-swagger.git
-cd todo-go-swagger
-go install ./cmd/todo-go-swagger # which will install the binary in $GOPATH/bin
+git clone https://github.com/worldofprasanna/todo-list-server.git
+cd todo-list-server
+go install ./cmd/todo-list-server # which will install the binary in $GOPATH/bin
 ```
 
 ## Usage
 
 ```
-todo-go-swagger -h # To get list of all menus
-todo-go-swagger # To start the server
+todo-list-server -h # To get list of all menus
+todo-list-server # To start the server
 ```
 
 ## Maintainers
